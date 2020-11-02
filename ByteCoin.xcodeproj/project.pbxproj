@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		943DA1C1254F7B5E001B9CCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943DA1C0254F7B5E001B9CCB /* AppDelegate.swift */; };
 		943DA1C3254F7B5E001B9CCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943DA1C2254F7B5E001B9CCB /* SceneDelegate.swift */; };
-		943DA1C5254F7B5E001B9CCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943DA1C4254F7B5E001B9CCB /* ViewController.swift */; };
+		943DA1C5254F7B5E001B9CCB /* ByteCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943DA1C4254F7B5E001B9CCB /* ByteCoinViewController.swift */; };
 		943DA1C8254F7B5E001B9CCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943DA1C6254F7B5E001B9CCB /* Main.storyboard */; };
 		943DA1CA254F7B60001B9CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 943DA1C9254F7B60001B9CCB /* Assets.xcassets */; };
 		943DA1CD254F7B60001B9CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943DA1CB254F7B60001B9CCB /* LaunchScreen.storyboard */; };
+		943DA1DC254F948D001B9CCB /* CoinNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943DA1DB254F948D001B9CCB /* CoinNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		943DA1BD254F7B5E001B9CCB /* ByteCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		943DA1C0254F7B5E001B9CCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		943DA1C2254F7B5E001B9CCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		943DA1C4254F7B5E001B9CCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		943DA1C4254F7B5E001B9CCB /* ByteCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteCoinViewController.swift; sourceTree = "<group>"; };
 		943DA1C7254F7B5E001B9CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		943DA1C9254F7B60001B9CCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		943DA1CC254F7B60001B9CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		943DA1CE254F7B60001B9CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		943DA1DB254F948D001B9CCB /* CoinNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		943DA1BF254F7B5E001B9CCB /* ByteCoin */ = {
 			isa = PBXGroup;
 			children = (
+				943DA1D8254F7BA5001B9CCB /* Model */,
+				943DA1D5254F7B7E001B9CCB /* View */,
 				943DA1C0254F7B5E001B9CCB /* AppDelegate.swift */,
 				943DA1C2254F7B5E001B9CCB /* SceneDelegate.swift */,
-				943DA1C4254F7B5E001B9CCB /* ViewController.swift */,
-				943DA1C6254F7B5E001B9CCB /* Main.storyboard */,
+				943DA1D6254F7B98001B9CCB /* Controller */,
 				943DA1C9254F7B60001B9CCB /* Assets.xcassets */,
 				943DA1CB254F7B60001B9CCB /* LaunchScreen.storyboard */,
 				943DA1CE254F7B60001B9CCB /* Info.plist */,
 			);
 			path = ByteCoin;
+			sourceTree = "<group>";
+		};
+		943DA1D5254F7B7E001B9CCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				943DA1C6254F7B5E001B9CCB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		943DA1D6254F7B98001B9CCB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				943DA1C4254F7B5E001B9CCB /* ByteCoinViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		943DA1D8254F7BA5001B9CCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				943DA1DB254F948D001B9CCB /* CoinNetworkManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				943DA1C5254F7B5E001B9CCB /* ViewController.swift in Sources */,
+				943DA1C5254F7B5E001B9CCB /* ByteCoinViewController.swift in Sources */,
+				943DA1DC254F948D001B9CCB /* CoinNetworkManager.swift in Sources */,
 				943DA1C1254F7B5E001B9CCB /* AppDelegate.swift in Sources */,
 				943DA1C3254F7B5E001B9CCB /* SceneDelegate.swift in Sources */,
 			);
