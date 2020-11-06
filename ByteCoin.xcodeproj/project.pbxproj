@@ -14,6 +14,8 @@
 		943DA1CA254F7B60001B9CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 943DA1C9254F7B60001B9CCB /* Assets.xcassets */; };
 		943DA1CD254F7B60001B9CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943DA1CB254F7B60001B9CCB /* LaunchScreen.storyboard */; };
 		943DA1DC254F948D001B9CCB /* CoinNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943DA1DB254F948D001B9CCB /* CoinNetworkManager.swift */; };
+		943DA1DF2554D2C6001B9CCB /* CoinExchangeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943DA1DE2554D2C6001B9CCB /* CoinExchangeData.swift */; };
+		943DA1E22554D71E001B9CCB /* CoinExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943DA1E12554D71E001B9CCB /* CoinExchangeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		943DA1CC254F7B60001B9CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		943DA1CE254F7B60001B9CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		943DA1DB254F948D001B9CCB /* CoinNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinNetworkManager.swift; sourceTree = "<group>"; };
+		943DA1DE2554D2C6001B9CCB /* CoinExchangeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinExchangeData.swift; sourceTree = "<group>"; };
+		943DA1E12554D71E001B9CCB /* CoinExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinExchangeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				943DA1DB254F948D001B9CCB /* CoinNetworkManager.swift */,
+				943DA1DE2554D2C6001B9CCB /* CoinExchangeData.swift */,
+				943DA1E12554D71E001B9CCB /* CoinExchangeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 				943DA1DC254F948D001B9CCB /* CoinNetworkManager.swift in Sources */,
 				943DA1C1254F7B5E001B9CCB /* AppDelegate.swift in Sources */,
 				943DA1C3254F7B5E001B9CCB /* SceneDelegate.swift in Sources */,
+				943DA1DF2554D2C6001B9CCB /* CoinExchangeData.swift in Sources */,
+				943DA1E22554D71E001B9CCB /* CoinExchangeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

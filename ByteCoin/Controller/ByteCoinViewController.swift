@@ -10,11 +10,13 @@ import UIKit
 class ByteCoinViewController: UIViewController {
     
     // network manager
-    let coinNetworkManager = CoinNetworkManager()
+    var coinNetworkManager = CoinNetworkManager()
+    
 
     @IBOutlet weak var currencyPicker: UIPickerView!
     @IBOutlet weak var currencyLbl: UILabel!
     
+    @IBOutlet weak var exchangeLbl: UILabel!
     
     
     override func viewDidLoad() {
@@ -24,6 +26,9 @@ class ByteCoinViewController: UIViewController {
         currencyPicker.dataSource = self
         //set the deligate
         currencyPicker.delegate = self
+        
+        // CoinNetworkManagerDelegate
+        coinNetworkManager.delegate = self
         
     }
 
@@ -49,5 +54,31 @@ extension ByteCoinViewController:UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return coinNetworkManager.currencyArray[row]
     }
+    
+    
+    // didSelectRow
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        coinNetworkManager.setExchangeRate(with: row)
+    }
+    
+}
+
+//MARK:- COIN MANAGER DELEGATE
+extension ByteCoinViewController:CoinNetworkManagerDelegate{
+    func didFailWithError(_ error: Error) {
+        print("fail")
+    }
+    
+    func didGetResult(_ result: CoinExchangeModel) {
+        
+        //update the UI
+        DispatchQueue.main.async {
+            self.currencyLbl.text = String(result.asset_id_quote)
+            self.exchangeLbl.text = result.currentRate
+        }
+        
+    }
+    
+    
 }
 

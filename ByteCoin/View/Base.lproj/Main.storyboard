@@ -19,31 +19,40 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qyd-Jw-bG3" userLabel="topView">
                                 <rect key="frame" x="30" y="74" width="340" height="100"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ce9-l3-kGD">
-                                        <rect key="frame" x="0.0" y="1" width="100" height="98.666666666666671"/>
-                                        <color key="tintColor" name="IconColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="HV4-j8-OIa"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="E16-Zc-7jv">
-                                        <rect key="frame" x="102" y="0.0" width="233" height="100"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                        <color key="textColor" name="textColorSet"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="AsA-eN-v14" userLabel="topViewInnerContent">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ce9-l3-kGD">
+                                                <rect key="frame" x="0.0" y="6" width="90" height="88.666666666666671"/>
+                                                <color key="tintColor" name="IconColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="8fy-In-TGy"/>
+                                                    <constraint firstAttribute="width" constant="90" id="a6Y-ml-kbu"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZE-Tw-Qoe">
+                                                <rect key="frame" x="151.66666666666666" y="25" width="50" height="50"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <color key="textColor" name="textColorSet"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="E16-Zc-7jv">
+                                                <rect key="frame" x="276" y="32" width="64" height="36"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <color key="textColor" name="textColorSet"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" label="topView"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="ce9-l3-kGD" secondAttribute="bottom" id="0cv-Pa-gCh"/>
-                                    <constraint firstItem="E16-Zc-7jv" firstAttribute="top" secondItem="Qyd-Jw-bG3" secondAttribute="top" id="E26-Ed-6t0"/>
-                                    <constraint firstItem="ce9-l3-kGD" firstAttribute="leading" secondItem="Qyd-Jw-bG3" secondAttribute="leading" id="FbY-9p-g0u"/>
-                                    <constraint firstItem="ce9-l3-kGD" firstAttribute="top" secondItem="Qyd-Jw-bG3" secondAttribute="top" id="Ffm-YS-IpT"/>
-                                    <constraint firstAttribute="trailing" secondItem="E16-Zc-7jv" secondAttribute="trailing" constant="5" id="aS5-Fp-4aG"/>
-                                    <constraint firstItem="E16-Zc-7jv" firstAttribute="leading" secondItem="ce9-l3-kGD" secondAttribute="trailing" constant="2" id="pP9-q0-3DM"/>
+                                    <constraint firstAttribute="bottom" secondItem="AsA-eN-v14" secondAttribute="bottom" id="EqP-Lp-YJT"/>
+                                    <constraint firstItem="AsA-eN-v14" firstAttribute="top" secondItem="Qyd-Jw-bG3" secondAttribute="top" id="MMU-oZ-Xjx"/>
+                                    <constraint firstItem="AsA-eN-v14" firstAttribute="leading" secondItem="Qyd-Jw-bG3" secondAttribute="leading" id="MXS-jx-x87"/>
+                                    <constraint firstAttribute="trailing" secondItem="AsA-eN-v14" secondAttribute="trailing" id="Wwg-TO-WV6"/>
                                     <constraint firstAttribute="height" constant="100" id="peH-xD-Pcf"/>
-                                    <constraint firstAttribute="bottom" secondItem="E16-Zc-7jv" secondAttribute="bottom" id="wGo-Gm-jXp"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U49-Tq-Pcg" userLabel="pickerView">
@@ -78,6 +87,7 @@
                     <connections>
                         <outlet property="currencyLbl" destination="E16-Zc-7jv" id="BCt-8z-diH"/>
                         <outlet property="currencyPicker" destination="vV4-cf-eb4" id="He6-YA-vf8"/>
+                        <outlet property="exchangeLbl" destination="bZE-Tw-Qoe" id="ES5-Ej-WVn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
