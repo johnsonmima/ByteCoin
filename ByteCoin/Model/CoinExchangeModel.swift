@@ -13,7 +13,7 @@ struct CoinExchangeModel{
     let asset_id_quote:String
     let rate:Double
     
-    // return the rate in.1f
+    // return the exchange rate in.1f
     var  currentRate:String {
         return String(format: "%.1f", rate)
     }
